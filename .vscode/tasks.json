@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Setup basic testing requirements",
+            "label": "Set up basic testing requirements",
             "type": "shell",
             "windows": {
                 "command": "python",
@@ -32,6 +32,49 @@
                     "install",
                     "-Ur",
                     "requirements/basic-tests.txt"
+                ]
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        },
+        {
+            "label": "Set up advanced testing requirements",
+            "type": "shell",
+            "windows": {
+                "command": "python",
+                "args": [
+                    "-m",
+                    "pip",
+                    "install",
+                    "-Ur",
+                    "requirements\\advanced-tests.txt"
+                ]
+            },
+            "linux": {
+                "command": "python3",
+                "args": [
+                    "-m",
+                    "pip",
+                    "install",
+                    "-Ur",
+                    "requirements/advanced-tests.txt"
+                ]
+            },
+            "osx": {
+                "command": "python3",
+                "args": [
+                    "-m",
+                    "pip",
+                    "install",
+                    "-Ur",
+                    "requirements/advanced-tests.txt"
                 ]
             },
             "problemMatcher": [],
@@ -80,7 +123,74 @@
             "type": "shell",
             "dependsOn": [
                 "Ensure exercise file",
-                "Setup basic testing requirements"
+                "Set up basic testing requirements"
+            ],
+            "windows": {
+                "command": "python",
+                "args": [
+                    "-m",
+                    "pytest",
+                    "${relativeFileDirname}\\tests\\test_${fileBasename}",
+                    "--capture=no",
+                    "--no-header",
+                    "--verbosity=0",
+                    "-r=fEX",
+                    "--disable-warnings",
+                    "--tb=line",
+                    "--show-capture=all",
+                    "--assert=plain",
+                    "--maxfail=1"
+                ]
+            },
+            "linux": {
+                "command": "python3",
+                "args": [
+                    "-m",
+                    "pytest",
+                    "${relativeFileDirname}/tests/test_${fileBasename}",
+                    "--capture=no",
+                    "--no-header",
+                    "--verbosity=0",
+                    "-r=fEX",
+                    "--disable-warnings",
+                    "--tb=line",
+                    "--show-capture=all",
+                    "--assert=plain",
+                    "--maxfail=1"
+                ]
+            },
+            "osx": {
+                "command": "python3",
+                "args": [
+                    "-m",
+                    "pytest",
+                    "${relativeFileDirname}/tests/test_${fileBasename}",
+                    "--capture=no",
+                    "--no-header",
+                    "--verbosity=0",
+                    "-r=fEX",
+                    "--disable-warnings",
+                    "--tb=line",
+                    "--show-capture=all",
+                    "--assert=plain",
+                    "--maxfail=1"
+                ]
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "Test exercise (no dependency checking)",
+            "type": "shell",
+            "dependsOn": [
+                "Ensure exercise file"
             ],
             "windows": {
                 "command": "python",
