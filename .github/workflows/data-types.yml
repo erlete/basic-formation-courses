@@ -2,7 +2,7 @@ name: Data types lesson validation
 
 on:
   push:
-    branches: [actions-implementation]  # Change me!
+    branches: [data-types]
 
 jobs:
   test-solutions:
