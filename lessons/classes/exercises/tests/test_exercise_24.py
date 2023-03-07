@@ -4,7 +4,7 @@ from os.path import basename
 import pytest
 
 i = basename(__file__)[-5:-3]
-module = importlib.import_module(f".exercise_{i}", package="solutions")
+module = importlib.import_module(f".exercise_{i}", package="exercises")
 
 def test():
     Coordinate = getattr(module, "Coordinate", None)
