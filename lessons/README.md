@@ -32,11 +32,11 @@ In order to execute tests, you will need to execute a specific task that matches
 
 Note that the last line instructs you to open the command palette of Visual Studio Code. Once you open it and search for *"Tasks: Run Task"*, you will be able to choose amongst plenty of tests.
 
-![Test selection](/media/lessons/tests-1.png)
+![Test selection](/.media/lessons/tests-1.png)
 
 Do not look for the test manually, just write its number and it will be selected automatically.
 
-![Test search](/media/lessons/tests-2.png)
+![Test search](/.media/lessons/tests-2.png)
 
 Last step is to press enter and the test will be executed in a dedicated terminal window. Here is what you would see when you still have not modified exercise 4:
 
