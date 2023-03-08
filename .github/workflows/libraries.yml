@@ -1,9 +1,9 @@
-name: Data Types lesson validation
+name: Libraries lesson validation
 
 on:
   pull_request:
     types: [opened, synchronize]
-    paths: [lessons/data-types/**]
+    paths: [lessons/libraries/**]
 
 jobs:
   test-solutions:
@@ -25,4 +25,4 @@ jobs:
           python -m pip install -Ur requirements/requirements.txt
 
       - name: "Test exercises"
-        run: python -m pytest lessons/data-types/exercises/tests --capture=no --no-header --verbosity=0 -r=fEX --disable-warnings --tb=line --show-capture=all --assert=plain
+        run: python -m pytest lessons/libraries/exercises/tests --capture=no --no-header --verbosity=0 -r=fEX --disable-warnings --tb=line --show-capture=all --assert=plain
