@@ -73,7 +73,7 @@ If this command returns an error, it either means that Git was not installed suc
 Git is a complex tool but relatively easy to use. But before working with it there are some basics that must be known to have a solid base.
 
 ### Repository
-Git needs a place to work, and you too. This normally is a directory and when initializing one git will do some interesting things, let's check them out using the default tool for Git:
+Git needs a place to work, and you too. This normally is a directory and when initializing a repo git will do some interesting things, let's check them out using the default tool for Git:
 
 ```bash
 $ mkdir Repository      # Creating a folder
@@ -82,7 +82,7 @@ $ git init              # Initializing a git repo
 $ ls -a
 .  ..  .git
 ```
-A folder called `.git` has appear after running `git init`, but what is this folder? When running `git init` you told Git to create a Git repo in that folder, therefore it created a folder to store all the information needed to maintain the repository.
+A folder called `.git` has appear after running `git init`, but what is this folder? When running `git init` you told Git to create a Git repo in that folder, therefore it created a folder to store all the information needed to maintain the repository. Not only can you store there the repo information but also it is where you can develop. So near `.git` you can find any kind of file you are working on, for example your `HelloWorld.py` file.
 
 
 ## Git and GitHub
