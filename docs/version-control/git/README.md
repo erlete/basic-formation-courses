@@ -88,7 +88,7 @@ So there is a folder called `.git` and it stores information about the repo, but
 ### Snapshots
 Each time you make a change to a file, git will make a snapshot of the repo, like a screenshot of the actual state of it. All this snapshots are stored inside `.git`. But it will store only the things that have changed. If a file hasn't changed it will reference to the last snapshot.
 
-![Snapshots](/.media/git/snapshots.png)
+![Snapshots](/.media/version-control/git/snapshots.png)
 
 
 ## Git and GitHub
