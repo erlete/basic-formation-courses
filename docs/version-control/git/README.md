@@ -72,7 +72,7 @@ If this command returns an error, it either means that Git was not installed suc
 ## Getting Started
 Git is a complex tool but relatively easy to use. But before working with it there are some basics that must be known to have a solid base.
 
-### Repository
+### Repositories
 Git needs a place to work, and you too. This normally is a directory and when initializing a repo git will do some interesting things, let's check them out using the default tool for Git:
 
 ```bash
