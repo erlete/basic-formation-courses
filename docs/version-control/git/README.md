@@ -91,7 +91,18 @@ Each time you make a change to a file, Git will make a snapshot of the repo, lik
 
 ![Snapshots](/.media/version-control/git/snapshots.png)
 
-Here you have an abstract example of how snapshots could be in a repo. File B doesn't change from Version 2 to Version 3, therefore in Version 3 it references to B (the previous snapshot). This same situation occurs with File A and C at different moments.
+Here you have an abstract example of how snapshots could be in a repo. File B doesn't change in Version 2 and Version 3, therefore it references directly to File B (the previous snapshot). This same situation occurs with File A and C at different moments.
+
+### Commits
+You've seen snapshots, yet you don't know when snapshots are done. Here is where commits spring into action. Let's say you modify your file `main.py`, for the moment Git won't do anything. But if you make a commit from that file, Git will start to work:
+
+```bash
+$ git commit -am "Modified main.py"     # Creating a commit with all modified files and writing a description
+[master dda9041] Modified main.py
+ 1 file changed, 1 insertion(+)
+```
+Too much information, huh? A deconstruction of the output may help you. Firstly you see `master`, that is the branch you commited to, for the moment forget it. After that you can see a random string (`dda9041`). In order to identify every commit in a repo, Git generates a hash code with SHA1 (there are some tries to move on to SHA256) which gives a random string of fourty hexadecimal characters. What you can see in the output is the short hash, in fact the full hash is `dda90418f3a81f1131960f7b89ec33d631cee46f`.Then you see the title given before. And finally you have a small description of what has done in that commit. In this case one file has been modified with an insertion.
+
 ## Git and GitHub
 
 Git is not as simple as its name. In fact, it is a very powerful tool that not many people know how to use. You will learn the basics of Git and its platform per excellence, GitHub, in [the next chapter](../github/README.md).
