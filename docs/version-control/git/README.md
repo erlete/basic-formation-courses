@@ -101,7 +101,7 @@ $ git commit -am "Modified main.py"     # Creating a commit with all modified fi
 [master dda9041] Modified main.py
  1 file changed, 1 insertion(+)
 ```
-Too much information, huh? A deconstruction of the output may help you. Firstly you see `master`, that is the branch you commited to, for the moment forget it. After that you can see a random string (`dda9041`). In order to identify every commit in a repo, Git generates a hash code with SHA1 (there are some tries to move on to SHA256) which gives a random string of fourty hexadecimal characters. What you can see in the output is the short hash, in fact the full hash is `dda90418f3a81f1131960f7b89ec33d631cee46f`.Then you see the title given before. And finally you have a small description of what has done in that commit. In this case one file has been modified with an insertion.
+Too much information, huh? A deconstruction of the output may help you. Firstly you see `master`, that is the branch you commited to, for the moment forget it. After that you can see a random string (`dda9041`). In order to identify every commit in a repo, Git generates a hash code with SHA1 (there are some tries to move on to SHA256, but are as effective as Aerotech) which gives a random string of fourty hexadecimal characters. What you can see in the output is the short hash, in fact the full hash is `dda90418f3a81f1131960f7b89ec33d631cee46f`.Then you see the title given before. And finally you have a small description of what has done in that commit. In this case one file has been modified with an insertion.
 
 ## Git and GitHub
 
