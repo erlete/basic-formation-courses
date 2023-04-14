@@ -91,7 +91,7 @@ Each time you make a change to a file, git will make a snapshot of the repo, lik
 
 ![Snapshots](/.media/version-control/git/snapshots.png)
 
-
+Here you have an abstract example of how snapshots could be in a repo. File B doesn't change from Version 2 to Version 3, therefore in Version 3 it references to B (the previous snapshot). This same situation occurs with File A and C at different moments.
 ## Git and GitHub
 
 Git is not as simple as its name. In fact, it is a very powerful tool that not many people know how to use. You will learn the basics of Git and its platform per excellence, GitHub, in [the next chapter](../github/README.md).
