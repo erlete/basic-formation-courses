@@ -73,12 +73,12 @@ If this command returns an error, it either means that Git was not installed suc
 Git is a complex tool but relatively easy to use. But before working with it there are some basics that must be known to have a solid base.
 
 ### Repositories
-Git needs a place to work, and you too. This normally is a directory and when initializing a repo git will do some interesting things, let's check them out using the default tool for Git:
+Git needs a place to work, and you too. This normally is a directory and when initializing a repo Git will do some interesting things, let's check them out using the default tool for Git:
 
 ```bash
 $ mkdir Repository      # Creating a folder
 $ cd Repository         # Getting inside the folder
-$ git init              # Initializing a git repo
+$ git init              # Initializing a Git repo
 $ ls -a                 # Listing files inside the current directory
 .  ..  .git
 ```
@@ -87,7 +87,7 @@ A folder called `.git` has appear after running `git init`, but what is this fol
 There is a folder called `.git` and it stores information about the repo, but what exactly? Basically snapshots of your repository.
 
 ### Snapshots
-Each time you make a change to a file, git will make a snapshot of the repo, like a screenshot of the actual state of it. All this snapshots are stored inside `.git`. But it will store only the things that have changed. If a file hasn't changed it will reference to the last snapshot.
+Each time you make a change to a file, Git will make a snapshot of the repo, like a screenshot of the actual state of it. All this snapshots are stored inside `.git`. But it will store only the things that have changed. If a file hasn't changed it will reference to the last snapshot.
 
 ![Snapshots](/.media/version-control/git/snapshots.png)
 
