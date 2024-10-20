@@ -1,5 +1,9 @@
 # Introduction to Collaborative Development
 
+> [!IMPORTANT]  
+> **This repository has been deprecated** in favor of the development of [PyLearningLab](https://pylearninglab.erlete.dev) as it contains newer and significantly better content.
+> This means that support in this repository has been completely disabled. Issues, PRs and discussions will not receive any further attention.
+
 Welcome to the Introduction to Collaborative Development course! This repository contains all necessary resources to achieve a basic formation in common development practices, Python programming and code editing skills.
 
 It is intended to be a foundation for collaborative development. It can be really useful for students that are starting their career in the industry. It does not intend to replace any official courses, yet it covers a set of topics that can be used as a kickstart for further learning.
